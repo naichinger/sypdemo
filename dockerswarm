@@ -1,0 +1,7 @@
+docker stack deploy --compose-file docker-compose.yml stackdemo
+
+docker service ls
+
+docker service scale stackdemo_backend=4
+
+docker stack rm stackdemo

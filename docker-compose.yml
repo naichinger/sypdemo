@@ -8,8 +8,8 @@ services:
         POSTGRES_USER: app
         POSTGRES_DB: carsdb
         PGDATA: "/var/lib/postgresql/data/pgdata"
-      volumes:
-        - "./db:/var/lib/postgresql/data"
+      #volumes:
+      #  - "./db:/var/lib/postgresql/data"
     web:
       image: nginx
       ports:
